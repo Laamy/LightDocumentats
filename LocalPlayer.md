@@ -39,7 +39,7 @@ Message me on discord to suggest stuff from the MCAPI
 
 *float stepHeight
 
-*const char* rawUsername
+*const char\* rawUsername
 
 # internal functions
 
