@@ -74,3 +74,13 @@ Get the internal onGround2 property
 void getOnGround() -> returns 1
 ```
 Get the internal onGround property
+
+```cpp
+void getPosition() -> returns 3
+```
+Get the internal property of player X,Y,Z ingame
+
+```cpp
+void setOnGround(bool value) -> returns 0
+```
+Set if the player can jump or not
