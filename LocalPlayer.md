@@ -1,7 +1,10 @@
-# internal properties (Not accessible)
+# Internal properties (Not accessible)
 
 Please note that these are defined in a way to help us give you access to them if possible
 Message me on discord to suggest stuff from the MCAPI
+
+ALSO These all use a special method called OFFSET SIGS meaning
+they last up to 16 times longer then normal "padding"
 
 - bool onGround
 - bool prevOnGround
@@ -23,7 +26,7 @@ Message me on discord to suggest stuff from the MCAPI
 - float stepHeight
 - const char* rawUsername
 
-# internal functions
+# Internal methods (Not accessible)
 
 ```cpp
 void teleportTo(Vector3 input)
@@ -39,3 +42,35 @@ Calculate direction vector (X,Y,Z) based of given input
 Vector3 lookingVector()
 ```
 Get the actors looking vector (X,Y,Z)
+
+# Lua functions
+
+```cpp
+void exists() -> returns 1
+```
+Check if the LocalPlayer exists
+
+```cpp
+void getWalkingIntoWall() -> returns 1
+```
+Get the internal walkingIntoWall property
+
+```cpp
+void getPrevOnGround() -> returns 1
+```
+Get the internal prevOnGround property
+
+```cpp
+void getTouchingObj() -> returns 1
+```
+Get the internal touchingObj property
+
+```cpp
+void getOnGround2() -> returns 1
+```
+Get the internal onGround2 property
+
+```cpp
+void getOnGround() -> returns 1
+```
+Get the internal onGround property
