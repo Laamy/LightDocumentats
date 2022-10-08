@@ -26,22 +26,22 @@ they last up to 16 times longer then normal "padding"
 - float stepHeight
 - const char* rawUsername
 
-# Internal methods (Not accessible)
+# Internal methods (accessible = ✅)
 
 ```cpp
 void teleportTo(Vector3 input)
 ```
-Properly teleport to given position
+Properly teleport to given position ✅
 
 ```cpp
 Vector3 directionalVector(float x, float y)
 ```
-Calculate direction vector (X,Y,Z) based of given input
+Calculate direction vector (X,Y,Z) based of given input ❌
 
 ```cpp
 Vector3 lookingVector()
 ```
-Get the actors looking vector (X,Y,Z)
+Get the actors looking vector (X,Y,Z) ❌
 
 # Lua functions
 
