@@ -45,42 +45,42 @@ Get the actors looking vector (X,Y,Z)
 
 # Lua functions
 
-```cpp
-void exists() -> returns 1
+```lua
+exists() -> returns 1
 ```
 Check if the LocalPlayer exists
 
-```cpp
-void getWalkingIntoWall() -> returns 1
+```lua
+getWalkingIntoWall() -> returns 1
 ```
 Get the internal walkingIntoWall property
 
-```cpp
-void getPrevOnGround() -> returns 1
+```lua
+getPrevOnGround() -> returns 1
 ```
 Get the internal prevOnGround property
 
-```cpp
-void getTouchingObj() -> returns 1
+```lua
+getTouchingObj() -> returns 1
 ```
 Get the internal touchingObj property
 
-```cpp
-void getOnGround2() -> returns 1
+```lua
+getOnGround2() -> returns 1
 ```
 Get the internal onGround2 property
 
-```cpp
-void getOnGround() -> returns 1
+```
+getOnGround() -> returns 1
 ```
 Get the internal onGround property
 
-```cpp
-void getPosition() -> returns 3
+```lua
+getPosition() -> returns 3
 ```
 Get the internal property of player X,Y,Z ingame
 
-```cpp
-void setOnGround(bool value) -> returns 0
+```lua
+setOnGround(bool) -> returns 0
 ```
 Set if the player can jump or not
