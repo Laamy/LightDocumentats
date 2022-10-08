@@ -91,7 +91,7 @@ teleportTo(X, Y Z) -> returns 0
 Teleport the actor to given X Y & Z (handles hitbox for you)
 
 ```lua
-getRotation() -> returns 3
+getRotation() -> returns 2
 ```
 Get the internal property of player rotations ingame
 
@@ -99,3 +99,8 @@ Get the internal property of player rotations ingame
 getVelocity() -> returns 3
 ```
 Get the internal property of player velocity ingame
+
+```lua
+setVelocity(X, Y Z) -> returns 0
+```
+Set the velocity of the current actor
