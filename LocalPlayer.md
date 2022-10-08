@@ -84,3 +84,8 @@ Get the internal property of player X,Y,Z ingame
 setOnGround(bool) -> returns 0
 ```
 Set if the player can jump or not
+
+```lua
+teleportTo(X, Y Z) -> returns 0
+```
+Teleport the actor to given X Y & Z (handles hitbox for you)
