@@ -70,7 +70,7 @@ getOnGround2() -> returns 1
 ```
 Get the internal onGround2 property
 
-```
+```lua
 getOnGround() -> returns 1
 ```
 Get the internal onGround property
