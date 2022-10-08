@@ -89,3 +89,13 @@ Set if the player can jump or not
 teleportTo(X, Y Z) -> returns 0
 ```
 Teleport the actor to given X Y & Z (handles hitbox for you)
+
+```lua
+getRotation() -> returns 3
+```
+Get the internal property of player rotations ingame
+
+```lua
+getVelocity() -> returns 3
+```
+Get the internal property of player velocity ingame
