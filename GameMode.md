@@ -1,4 +1,4 @@
-# Methods
+# Lua functions
 
 ```lua
 getBlockReach() -> returns 1
