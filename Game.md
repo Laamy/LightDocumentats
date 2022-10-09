@@ -24,6 +24,8 @@ end
 ```
 Check if the player is in a GUI of sorts
 
+<br/>
+
 ```lua
 exists() -> returns 1
 ```
