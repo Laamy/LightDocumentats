@@ -5,6 +5,7 @@ hookfunction(detour, original) -> returns 1
 ```
 ```lua
 local __o__Print -- original print function
+
 __o__Print = hookfunction(function(txt)
     local __o__Print("Modified '" .. txt .. "'")
 end, Print)
