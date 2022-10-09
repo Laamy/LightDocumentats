@@ -40,5 +40,5 @@ restart minecraft then reinject and your index.lua script will load
 - lua engine access to all the GameMode CApi
 - lua engine access to rest of localplayer variables I have defined aswell as part of localplayer CApi access
 - low level access to hooking (MinHook)
-- low level access to game chunk 2 lua converter
+- low level access to game chunk 2 lua converter (Decompiler)
 - Make game rely on this lua engine completely
