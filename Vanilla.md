@@ -51,3 +51,13 @@ Log string both to debug stream and log file or ease of debugging
 getfenv() -> returns 1
 ```
 Get the environment of a function
+
+```lua
+getgenv() -> returns 1
+```
+Get the environment that will be applied to each script ran by light api
+
+```lua
+getreg() -> returns 1
+```
+Get the lua registry
