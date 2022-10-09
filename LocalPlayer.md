@@ -48,57 +48,84 @@ Get the actors looking vector (X,Y,Z) ❌
 ```lua
 exists() -> returns 1
 ```
+```lua
+if LocalPlayer.exists() then
+    LocalPlayer.setOnGround(true) -- infinite jump if player exists
+end
+```
 Check if the LocalPlayer exists
+
+<br/>
 
 ```lua
 getWalkingIntoWall() -> returns 1
 ```
 Get the internal walkingIntoWall property
 
+<br/>
+
 ```lua
 getPrevOnGround() -> returns 1
 ```
 Get the internal prevOnGround property
+
+<br/>
 
 ```lua
 getTouchingObj() -> returns 1
 ```
 Get the internal touchingObj property
 
+<br/>
+
 ```lua
 getOnGround2() -> returns 1
 ```
 Get the internal onGround2 property
+
+<br/>
 
 ```lua
 getOnGround() -> returns 1
 ```
 Get the internal onGround property
 
+<br/>
+
 ```lua
 getPosition() -> returns 3
 ```
 Get the internal property of player X,Y,Z ingame
+
+<br/>
 
 ```lua
 setOnGround(bool) -> returns 0
 ```
 Set if the player can jump or not
 
+<br/>
+
 ```lua
 teleportTo(X, Y Z) -> returns 0
 ```
 Teleport the actor to given X Y & Z (handles hitbox for you)
+
+<br/>
 
 ```lua
 getRotation() -> returns 2
 ```
 Get the internal property of player rotations ingame
 
+<br/>
+
 ```lua
 getVelocity() -> returns 3
 ```
 Get the internal property of player velocity ingame
+
+<br/>
 
 ```lua
 setVelocity(X, Y Z) -> returns 0
