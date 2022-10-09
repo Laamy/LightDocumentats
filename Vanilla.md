@@ -47,15 +47,21 @@ Print("Hello " .. " World!")
 ```
 Log string both to debug stream and log file or ease of debugging
 
+<br/>
+
 ```lua
 getfenv() -> returns 1
 ```
 Get the environment of a function
 
+<br/>
+
 ```lua
 getgenv() -> returns 1
 ```
 Get the environment that will be applied to each script ran by light api
+
+<br/>
 
 ```lua
 getreg() -> returns 1
