@@ -12,7 +12,7 @@ Wait X amount of seconds
 
 # Other utils
 
-```lua
+```cpp
 KeyHeld(keyid) -> returns 1
 ```
 ```lua
@@ -27,7 +27,7 @@ Returns the current stored keymap state of keyid key
 
 <br/>
 
-```lua
+```cpp
 Print(str) -> returns 0
 ```
 ```lua
