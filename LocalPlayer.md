@@ -189,3 +189,29 @@ setVelocity(X, Y Z) -> returns 0
 LocalPlayer.setVelocity(0, 1010, 0) -- Send yourself up 5 blocks 
 ```
 Set the velocity of the current actor
+
+<br/>
+
+```lua
+isAlive() -> returns 1
+```
+```lua
+if LocalPlayer.isAlive() then
+    -- player is over 0 hearts if this is executing
+end
+```
+Check the current state of the actor then returns a value from 0-1 (false-true) depending on if the actor is alive
+
+<br/>
+
+```lua
+isInWater() -> returns 1
+```
+```lua
+if LocalPlayer.isInWater() then
+    local x,y,z = LocalPlayer.getVelocity()
+    
+    LocalPlayer.setVelocity(x, 0.1, z) -- Float to the top of all waterbodies (Excluding lava)
+end
+```
+Check to see if the current actor is currently in any waterbodies
