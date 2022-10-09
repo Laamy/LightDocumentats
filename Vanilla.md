@@ -73,6 +73,11 @@ Get the lua registry
 ```lua
 keypress(keyid) -> returns 0
 ```
+```lua
+keypress(87)
+wait(1)
+keyrelease(87) -- hold w for 1 second
+```
 Simulate a keypress - https://www.oreilly.com/library/view/javascript-dhtml/9780596514082/apb.html
 
 <br/>
