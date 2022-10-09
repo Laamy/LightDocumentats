@@ -3,7 +3,14 @@
 This is a lua engine designed for minecraft 1.19.31 (Latest at this moment in time)
 but should work on all versions beneath all the way until 1.17
 
-it gives you quick access to creating high quality clients/cheats without needing to worry about updating it yourself or going through complex C/C++ training
+it gives you quick access to creating high quality clients/cheats without needing to worry about updating it yourself or going through complex C/C++ training as we provide everything for you updated and ready to use
+
+# How is this possible?
+
+Well we rely on very special signatures which have not changed since 1.17 when i was developing trero/netherite
+aswell as special offset sigs
+
+Feel free to suggest anything you want and we'll try our best to give you high level access
 
 # LightDocumentats
 
