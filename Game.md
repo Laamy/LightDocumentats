@@ -18,3 +18,8 @@ Get the BitmapFont address to the default minecraft font
 canUseKeys() -> returns 1
 ```
 Check if the player is in a GUI of sorts
+
+```lua
+exists() -> returns 1
+```
+Check if the game instance has been initialized/exists
