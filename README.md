@@ -28,4 +28,4 @@ restart minecraft then reinject and your index.lua script will load
 
 - lua engine access to entitylist
 - lua engine access to all the GameMode CApi
-- lua engine access to
+- lua engine access to rest of localplayer variables I have defined aswell as part of localplayer CApi access
