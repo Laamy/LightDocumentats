@@ -12,9 +12,10 @@ Wait X amount of seconds
 
 # Other utils
 
-```cpp
+```lua
 KeyHeld(keyid) -> returns 1
 ```
+Example:
 ```lua
 local w = KeyHeld(87) ; a = KeyHeld(65)
 	; s = KeyHeld(83) ; d = KeyHeld(68)
@@ -27,9 +28,10 @@ Returns the current stored keymap state of keyid key
 
 <br/>
 
-```cpp
+```lua
 Print(str) -> returns 0
 ```
+Example:
 ```lua
 Print("Hello " .. " World!")
 ```
