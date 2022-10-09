@@ -186,7 +186,7 @@ Get the internal property of player velocity ingame
 setVelocity(X, Y Z) -> returns 0
 ```
 ```lua
-LocalPlayer.setVelocity(0, 1010, 0) -- Send yourself up 5 blocks 
+LocalPlayer.setVelocity(0, 1, 0) -- Send yourself up 5 blocks 
 ```
 Set the velocity of the current actor
 
