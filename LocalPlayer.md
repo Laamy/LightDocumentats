@@ -60,12 +60,27 @@ Check if the LocalPlayer exists
 ```lua
 getWalkingIntoWall() -> returns 1
 ```
+```lua
+if LocalPlayer.getWalkingIntoWall() then
+    local a,b,c = LocalPlayer.getVelocity()
+    
+    LocalPlayer.setVelocity(a, 0.3, c) -- spider hacks
+end
+```
 Get the internal walkingIntoWall property
 
 <br/>
 
 ```lua
 getPrevOnGround() -> returns 1
+```
+```lua
+LocalPlayer.setOnGround(true)
+
+if LocalPlayer.getPrevOnGround() then
+     -- Even if onground is set to true over multiple ticks unless the player is TRULY on the ground this will stay as false
+     -- useful for bunnyhop & infinitejump at the same time
+end
 ```
 Get the internal prevOnGround property
 
@@ -74,12 +89,24 @@ Get the internal prevOnGround property
 ```lua
 getTouchingObj() -> returns 1
 ```
+```lua
+if LocalPlayer.getTouchingObj() then
+    -- If the player is touching any objects this piece of code will execute
+end
+```
 Get the internal touchingObj property
 
 <br/>
 
 ```lua
 getOnGround2() -> returns 1
+```
+```lua
+if LocalPlayer.getOnGround2() then
+    -- This piece of code will execute if either conditions are met:
+    -- Player is touching the floor
+    -- Player is touching the roof
+end
 ```
 Get the internal onGround2 property
 
@@ -88,12 +115,22 @@ Get the internal onGround2 property
 ```lua
 getOnGround() -> returns 1
 ```
+```lua
+if LocalPlayer.getOnGround() then
+    -- executes if player is touching the ground
+end
+```
 Get the internal onGround property
 
 <br/>
 
 ```lua
 getPosition() -> returns 3
+```
+```lua
+local x,y,z = LocalPlayer.getPosition()
+
+LocalPlayer.teleportTo(x, y - 1, z) -- teleport 1 block down
 ```
 Get the internal property of player X,Y,Z ingame
 
@@ -102,12 +139,18 @@ Get the internal property of player X,Y,Z ingame
 ```lua
 setOnGround(bool) -> returns 0
 ```
+```lua
+LocalPlayer.setOnGround(true) -- trick the game into thinking your on the ground even if your not
+```
 Set if the player can jump or not
 
 <br/>
 
 ```lua
 teleportTo(X, Y Z) -> returns 0
+```
+```lua
+LocalPlayer.teleportTo(100, 100, 100) -- Teleport to 100,100,100 in the world
 ```
 Teleport the actor to given X Y & Z (handles hitbox for you)
 
@@ -116,6 +159,11 @@ Teleport the actor to given X Y & Z (handles hitbox for you)
 ```lua
 getRotation() -> returns 2
 ```
+```lua
+local pitch,yaw = LocalPlayer.getRotation()
+
+-- Pitch & Yaw in 360d
+```
 Get the internal property of player rotations ingame
 
 <br/>
@@ -123,11 +171,21 @@ Get the internal property of player rotations ingame
 ```lua
 getVelocity() -> returns 3
 ```
+```lua
+local x,y,z = LocalPlayer.getVelocity()
+
+if y > 1 or y < -9 then
+    LocalPlayer.setVelocity(0,0,0) -- stop unnatural velocity
+end
+```
 Get the internal property of player velocity ingame
 
 <br/>
 
 ```lua
 setVelocity(X, Y Z) -> returns 0
+```
+```lua
+LocalPlayer.setVelocity(0, 1010, 0) -- Send yourself up 5 blocks 
 ```
 Set the velocity of the current actor
