@@ -5,12 +5,12 @@ Also known as the minecraft game class this contains alot of information about t
 ```cpp
 bool canUseMoveKeys()
 ```
-Used to check if your in a GUI or not
+Used to check if your in a GUI or not ✅
 
 ```cpp
 BitmapFont* getMcFont()
 ```
-Get the BitmapFont address to the default minecraft font
+Get the BitmapFont address to the default minecraft font ❌
 
 # Lua functions
 
