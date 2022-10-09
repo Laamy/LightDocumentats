@@ -28,6 +28,9 @@ Returns the current stored keymap state of keyid key
 <br/>
 
 ```lua
-void Print(str) -> returns 0
+Print(str) -> returns 0
+```
+```lua
+Print("Hello " .. " World!")
 ```
 Log string both to debug stream and log file or ease of debugging
