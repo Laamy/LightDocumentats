@@ -4,8 +4,8 @@
 getBlockReach() -> returns 1
 ```
 ```lua
-if GameMode.getBlockReach() != 6 then
-    -- Block reach has been modified
+if GameMode.getBlockReach() ~= 6 then
+    -- If this part is executing it means blockreach was modified
 end
 ```
 Get the block reach in decimal format
