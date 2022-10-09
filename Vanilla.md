@@ -3,10 +3,21 @@
 ```lua
 hookfunction(detour, original) -> returns 1
 ```
+```lua
+local __o__Print -- original print function
+__o__Print = hookfunction(function(txt)
+    local __o__Print("Modified '" .. txt .. "'")
+end, Print)
+```
 Allows you to detour functions aswell as get the original like a minhook library would
 
 ```lua
 wait(seconds) -> returns 0
+```
+```lua
+Print("Hello")
+wait(1) -- wait one second then print world
+Print("World")
 ```
 Wait X amount of seconds
 
@@ -15,7 +26,6 @@ Wait X amount of seconds
 ```lua
 KeyHeld(keyid) -> returns 1
 ```
-Example:
 ```lua
 local w = KeyHeld(87) ; a = KeyHeld(65)
 	; s = KeyHeld(83) ; d = KeyHeld(68)
@@ -31,7 +41,6 @@ Returns the current stored keymap state of keyid key
 ```lua
 Print(str) -> returns 0
 ```
-Example:
 ```lua
 Print("Hello " .. " World!")
 ```
