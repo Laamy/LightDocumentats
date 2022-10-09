@@ -67,3 +67,17 @@ Get the environment that will be applied to each script ran by light api
 getreg() -> returns 1
 ```
 Get the lua registry
+
+<br/>
+
+```lua
+keypress(keyid) -> returns 0
+```
+Simulate a keypress - https://www.oreilly.com/library/view/javascript-dhtml/9780596514082/apb.html
+
+<br/>
+
+```lua
+keyrelease(keyid) -> returns 0
+```
+Simulate a keyrelease - https://www.oreilly.com/library/view/javascript-dhtml/9780596514082/apb.html
