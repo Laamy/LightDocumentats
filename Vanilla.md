@@ -46,3 +46,8 @@ Print(str) -> returns 0
 Print("Hello " .. " World!")
 ```
 Log string both to debug stream and log file or ease of debugging
+
+```lua
+getfenv() -> returns 1
+```
+Get the environment of a function
