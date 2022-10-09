@@ -32,7 +32,9 @@ restart minecraft then reinject and your index.lua script will load
 - High level access to CTX as DRAWINGAPI
 - High level access to a custom hooking library other then minhook designed for LuaM
 - Strong security so people cant reverse engineer your lua script bytecode if obfuscated
-- Low level access to the games KEYMAP
+- Low level access to the games KEYMAP x2
+- Low level access to the lua registry (getreg)
+- High level access to the global/function envrionment (getgenv/getfenv)
 
 # Todo List
 
