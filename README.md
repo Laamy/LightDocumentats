@@ -47,6 +47,6 @@ restart minecraft then reinject and your index.lua script will load
 
 # Images
 
-https://i.imgur.com/IURNYUo.png
+https://i.imgur.com/IURNYUo.png 
 Proper crashless error handling
 say good bye to crashes
