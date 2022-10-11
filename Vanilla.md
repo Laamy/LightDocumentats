@@ -1,3 +1,18 @@
+# Lua functions
+
+```lua
+getidentity() -> returns 1
+```
+Get the current script identity
+
+```cpp
+enum ScriptContextLevel {
+	SCL_ModScript, -- Default
+	SCL_GameScript, -- Rewritten/converted gamescripts (For example UI scripts) low level access to all classes
+	SCL_Corescript -- Access to lua environment functions (Unstable so try not modify these as much as possible)
+};
+```
+
 # C++ Utils
 
 ```lua
@@ -11,6 +26,8 @@ __o__Print = hookfunction(function(txt)
 end, Print)
 ```
 Allows you to detour functions aswell as get the original like a minhook library would
+
+<br/>
 
 ```lua
 wait(seconds) -> returns 0
