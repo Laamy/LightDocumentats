@@ -215,3 +215,22 @@ if LocalPlayer.isInWater() then
 end
 ```
 Check to see if the current actor is currently in any waterbodies
+
+<br/>
+
+```lua
+getHurTime() -> returns 3
+```
+Get the current hurt time as a vector3
+
+<br/>
+
+```lua
+setHurTime(x, y, z) -> returns 0
+```
+```lua
+while true do
+    LocalPlayer.setHurTime(0, 0, 0) -- empty hurttime
+end
+```
+Set the current hurt time as a vector3
