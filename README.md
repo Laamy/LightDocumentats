@@ -44,3 +44,9 @@ restart minecraft then reinject and your index.lua script will load
 - low level access to hooking (MinHook)
 - low level access to game chunk 2 lua converter (Decompiler)
 - Make game rely on this lua engine completely
+
+# Images
+
+https://i.imgur.com/IURNYUo.png
+Proper crashless error handling
+say good bye to crashes
