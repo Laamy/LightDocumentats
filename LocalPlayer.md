@@ -234,3 +234,10 @@ while true do
 end
 ```
 Set the current hurt time as a vector3
+
+<br/>
+
+```lua
+getRuntimeId() -> returns 1
+```
+Get the current runtime id of actor
