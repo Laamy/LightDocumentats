@@ -11,7 +11,7 @@ Get the current script identity
 enum ScriptContextLevel {
 	SCL_ModScript, // Access to highest level of all documentation
 	SCL_GameScript, // Rewritten/converted gamescripts (For example UI scripts) low level access to all classes
-	SCL_Corescript // Access to lua environment functions (Unstable so try not modify these as much as possible)
+	SCL_Corescript // Access to lua environment functions (Unstable so try not modify these as much as possible as these more backend of the lua states
 };
 ```
 
