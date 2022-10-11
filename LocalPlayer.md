@@ -241,3 +241,39 @@ Set the current hurt time as a vector3
 getRuntimeId() -> returns 1
 ```
 Get the current runtime id of actor
+
+<br/>
+
+```lua
+setSwingingState(state) -> returns 0
+```
+```lua
+while true do
+    LocalPlayer.setSwingingState(0) -- Constantly set the state to empty
+end
+```
+Set the swinging arm animation state
+
+<br/>
+
+```lua
+setStepHeight(state) -> returns 0
+```
+```lua
+LocalPlayer.setStepHeight(2) -- set step hieght to 2 duh
+```
+Set how many blocks before you cant step up any higher
+
+<br/>
+
+```lua
+getStepHeight() -> returns 1
+```
+Get how many blocks before you cant step up any higher
+
+<br/>
+
+```lua
+getRawUsername() -> returns 1
+```
+Get the actors username as RAW text unmodified by the server
