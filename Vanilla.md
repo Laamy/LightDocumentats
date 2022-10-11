@@ -6,10 +6,12 @@ getidentity() -> returns 1
 Get the current script identity
 
 ```cpp
+// ModScript is default recommend GameScript for advanced scripters (Found in corescripts)
+
 enum ScriptContextLevel {
-	SCL_ModScript, -- Default
-	SCL_GameScript, -- Rewritten/converted gamescripts (For example UI scripts) low level access to all classes
-	SCL_Corescript -- Access to lua environment functions (Unstable so try not modify these as much as possible)
+	SCL_ModScript, // Access to highest level of all documentation
+	SCL_GameScript, // Rewritten/converted gamescripts (For example UI scripts) low level access to all classes
+	SCL_Corescript // Access to lua environment functions (Unstable so try not modify these as much as possible)
 };
 ```
 
