@@ -15,10 +15,15 @@ Get the BitmapFont address to the default minecraft font ❌
 # Lua functions
 
 ```lua
+isInGui() -> returns 1
 canUseKeys() -> returns 1
 ```
 ```lua
-if Game.exists() and Game.canUseKeys() then
+if not Game.isInGui() then
+    -- player isn't in a GUI currently
+end
+
+if Game.canUseKeys() then
     -- player isn't in a GUI currently
 end
 ```
