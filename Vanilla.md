@@ -6,7 +6,8 @@ getidentity() -> returns 1
 Get the current script identity
 
 ```cpp
-// ModScript is default recommend GameScript for advanced scripters (Found in corescripts)
+// ModScript is default
+// recommend GameScript for advanced scripters (Found in corescripts)
 
 enum ScriptContextLevel {
 	SCL_ModScript, // Access to highest level of all documentation
