@@ -107,3 +107,14 @@ Simulate a keypress - https://www.oreilly.com/library/view/javascript-dhtml/9780
 keyrelease(keyid) -> returns 0
 ```
 Simulate a keyrelease - https://www.oreilly.com/library/view/javascript-dhtml/9780596514082/apb.html
+
+<br/>
+
+```lua
+GetHttp(str) -> returns 1
+```
+```lua
+local txt = GetHttp("https://pastebin.com/raw/skJgB2mU")
+Print(txt) -- > Prints Example Text
+```
+Get URL data
