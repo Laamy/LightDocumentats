@@ -1,18 +1,25 @@
 function FastStop()
-	local w = KeyHeld(87) ; a = KeyHeld(65)
-		; s = KeyHeld(83) ; d = KeyHeld(68)
-	
-	if not w and not a and not s and not d then
-		local a,b,c = LocalPlayer.getVelocity()
+    -- Check if the player is pressing any of the WASD keys
+    local w = KeyHeld(87)
+    local a = KeyHeld(65)
+    local s = KeyHeld(83)
+    local d = KeyHeld(68)
 
-		LocalPlayer.setVelocity(0, b, 0)
-	end
+    -- If none of the WASD keys are being pressed
+    if not w and not a and not s and not d then
+        -- Get the player's current velocity
+        local a, b, c = LocalPlayer.getVelocity()
+
+        -- Set the player's velocity to 0 in the x and z directions
+        LocalPlayer.setVelocity(0, b, 0)
+    end
 end
 
 while true do
-	wait(0.05)
-	
-	if LocalPlayer.exists() then -- in a world
-		FastStop() -- faststop
-	end
+    wait(0.05)
+
+    -- If the local player exists
+    if LocalPlayer.exists() then
+        FastStop() -- Perform the fast stop
+    end
 end
