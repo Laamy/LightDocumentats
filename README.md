@@ -51,5 +51,4 @@ Chances of crashing is near 0 but not perfect
 the rest of crash preventing relies on you properly programming (doing checks before an action)
 
 # Update/release schedule
-
-Every 7 days the LightAPI will update
+never
